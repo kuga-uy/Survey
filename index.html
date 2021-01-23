@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Poppins:wght@600&family=Prompt:ital,wght@1,100;1,300&family=Questrial&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Poppins:wght@600&family=Prompt:ital,wght@1,300&family=Questrial&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" >
+
+        <title>Survey</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">encuesta para plataforma de programación</h1>
+           <h4> <p id="subtitle">Gracias por ayudarnos a mejorar</p></h4>
+        </header>
+        <main>
+            <fieldset id="base-form">
+                <form action="#" id="survey-form" method="post" name= "form">
+
+                    <label class="label" for="name">Nombre</label>
+                        <input class="inputs" name="name" id="name" type="text" placeholder="Introduce tu nombre" required>
+
+                     <label class="label"  for="email">Email</label>
+                        <input class="inputs" name="email" id="email" type="email" placeholder="Introduce tu email" required>
+
+                    <label class="label"  for="age">Edad (opcional)</label>
+                        <input class="inputs" name="age" id="age" type="number" max="100" min="1" value="1" step="1" placeholder="Introduce tu edad">
+                
+                    <label class="label" for="dropdown">¿Cuál opción describe mejor tu rol?</label>
+                        <select class="inputs" name="select" type="select" id="dropdown">
+                            <option value="value0" selected disabled>Elige tu rol</option>
+                            <option value="value1">Estudiante</option> 
+                            <option value="value2">Trabajador Part-Time</option>
+                            <option value="value3">Trabajador Full-Time</option>
+                        </select>
+                    
+                    <label class="label" for="radio" >¿Recomendarías la Plataforma de programación a un amigo?</label>
+                    <label class="label-text" for="yes"> Definitivamente</label>
+                        <input class="radio" type="radio" id="si" name="yes-recom" checked >
+                    <label class="label-text" for="no"> No </label>    
+                        <input class="radio" type="radio" id="no" name="no-recom">
+                    <label class="label-text" for="maybe"> Quizás</label>  
+                        <input class="radio" type="radio" id="maybe" name="maybe-recom">
+                    
+                        <label class="label"  for="select">¿Qué te gusta más de la plataforma de programación?</label>
+                        <select class="inputs" name="like-platform" type="select" id="select" required>
+                            <option value="value0" selected disabled>Elige</option>
+                            <option value="value1">Los clases virtuales</option> 
+                            <option value="value2">Los proyectos</option>
+                            <option value="value3">La comunidad de desarrolladores</option>
+                            <option value="value4">Otra cosa</option>
+                            <label for="other">¿Algún comentario o sugerencia?</label>
+                        <textarea id="other" placeholder="Escribe aquí tus comentarios"></textarea>
+                        </select>
+
+
+                    <label class="label" for="checkbox">¿Qué te gustaría que mejoremos? (elige las opciones que consideres)</label>
+                    <label class="label-text" for="option1"> Proyectos de Front-end </label>   
+                        <input class="check" type="checkbox" id="option1" name="frontend" value="frontend">
+                    <label class="label-text" for="option2"> Proyectos de back-end</label>
+                        <input  class="check" type="checkbox" id="option2" name="backend" value="backend">
+                    <label class="label-text" for="option3"> Pruebas de fin de curso</label>   
+                        <input  class="check" type="checkbox" id="option3" name="challenges" value="challenges">
+                    <label class="label-text" for="option4"> Comunidad open source </label>   
+                        <input  class="check" type="checkbox" id="option4" name="community" value="community">  
+                    <label class="label-text" for="option5"> Vídeos</label>   
+                        <input  class="check" type="checkbox" id="option5" name="videos" value="videos">
+                    <label class="label-text" for="option6">Creación de cursos adicionales</label>   
+                        <input  class="check" type="checkbox" id="option6" name="courses" value="courses">
+
+                    <label  class="label" for="aditional-comments">¿Algún comentario o sugerencia?</label>
+                        <textarea id="aditional-comments" placeholder="Escribe aquí tus comentarios"></textarea>
+
+                    <button type="submit" name="submit" id="submit">Enviar</button>
+
+                </form>
+            </fieldset>    
+        </main>
+        
+    </body>
+</html>
